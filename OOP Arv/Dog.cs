@@ -4,35 +4,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Arv
+namespace djurar
 {
-    internal class Dog:Animals
+    internal class Dog : Animals
     {
 
-        public int Numberoflegs=4;
-        public string Dogsound = "Bark";
-        public string Dogtail = "Long";
-      
 
-        public  Dog (string _Dogsound,string _Dogtail, int _speed, int _size,int _Numberoflegs) : base(_Dogsound,_Numberoflegs,_Dogtail, _speed, _size)
-        { 
-        
-            this.Legs = _Numberoflegs;
-            this.Sound = _Dogsound;
-            this.Tail = _Dogtail;
-        
-        }
-        public override void GetLegs()
+       public string _Attitude;
+
+        public Dog(string Name, string Attitude)
+            : base(Name, "Barks", "Omnivor", "indoors")
         {
-            Console.WriteLine($"Have {Numberoflegs} Legs ");
+            _Attitude = Attitude;
         }
-        public override void GetSound()
+
+        public void Attit()
         {
-            Console.WriteLine($"Dogs {Dogsound} Loud ");
+            Console.WriteLine($"Is very {_Attitude}");
         }
-        public override void GetTail() 
+    }
+
+    class Chiwawa : Dog
+
+    {
+        public string _Size;
+
+        public Chiwawa(string Name, string Size) : base(Name, "Guffy")
         {
-            Console.WriteLine($"Dogs have {Dogtail} tails ");
+            this._Size = Size;
+        }
+
+        public void GetSize()
+
+        {
+            Console.WriteLine($"A {_Name} is very {_Size} in size");
+        }
+
+
+        class Bulldog : Dog
+
+        {
+            public string _Strength;
+
+            public Bulldog(string Name, string Strength) : base(Name, "Strong")
+            {
+                this._Strength = Strength;
+            }
+
+            public void GetStrength()
+
+            {
+                Console.WriteLine($"A {_Name} is very {_Strength} in size");
+            }
         }
     }
 }

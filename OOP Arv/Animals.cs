@@ -1,49 +1,48 @@
-﻿using System;
+﻿using djurar;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Arv
+namespace djurar
 {
     internal class Animals
     {
-        public string Sound;
-        public int Legs;
-        public string Tail;
-        public string food;
-        public int Size;
+        public string _Name;
+        public string _Sound;
+        public string _Food;
+        public string _Habitat;
 
-        public Animals(string _Sound,int _Legs,string _Tail,string _food,int _size) 
-        
-        { 
-            this.Sound = _Sound;
-            this.Legs = _Legs;
-            this.Tail = _Tail;
-            this.food = _food;
-            this.Size = _size;
-        
+
+        public Animals(string Name, string Sound, string Food, string Habitat)
+        {
+            this._Name = Name;
+            this._Sound = Sound;
+            this._Food = Food;
+            this._Habitat = Habitat;
         }
 
-        public virtual void GetSound() 
+
+
+        public void MakeSound()
+
         {
 
-            Console.WriteLine("my name is tensa");
-
+            Console.WriteLine($"A {_Name} {_Sound}");
         }
-
-        public virtual void GetLegs() 
-        
+        public void GetFood()
         {
 
-            Console.WriteLine("");
-        
+            Console.WriteLine(_Food);
+
         }
-
-        public virtual void GetTail()
-
+        public void GetHabitat()
         {
-            Console.WriteLine("hello world");
+            Console.WriteLine(_Habitat);
+
         }
+
+
     }
 }

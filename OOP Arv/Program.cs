@@ -1,4 +1,5 @@
-﻿using System;
+﻿using djurar;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,14 @@ namespace OOP_Arv
     {
         static void Main(string[] args)
         {
-            Dog puppy = new Dog("Bark","long",160,200,4);
+            Dog pappy=new Dog("Scobby","Friendly");
 
-            puppy.GetLegs();
-            puppy.GetSound();
-            puppy.GetTail();
+            pappy.MakeSound();
+            pappy.GetFood();
+            pappy.GetHabitat();
+            pappy.Attit();
+
+         
         }
     }
 }
