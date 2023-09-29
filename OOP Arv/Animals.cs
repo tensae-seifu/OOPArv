@@ -11,16 +11,16 @@ namespace OOP_Arv
         public string Sound;
         public int Legs;
         public string Tail;
-        public int Speed;
+        public string food;
         public int Size;
 
-        public Animals(string _Sound,int _Legs,string _Tail,int _speed,int _size) 
+        public Animals(string _Sound,int _Legs,string _Tail,string _food,int _size) 
         
         { 
             this.Sound = _Sound;
             this.Legs = _Legs;
             this.Tail = _Tail;
-            this.Speed = _speed;
+            this.food = _food;
             this.Size = _size;
         
         }
