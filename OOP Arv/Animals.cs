@@ -43,7 +43,7 @@ namespace OOP_Arv
         public virtual void GetTail()
 
         {
-            Console.WriteLine("");
+            Console.WriteLine("hello world");
         }
     }
 }
