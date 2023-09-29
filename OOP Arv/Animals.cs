@@ -28,7 +28,7 @@ namespace OOP_Arv
         public virtual void GetSound() 
         {
 
-            Console.WriteLine("");
+            Console.WriteLine("my name is tensa");
 
         }
 
